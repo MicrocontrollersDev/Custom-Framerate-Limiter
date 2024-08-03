@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"id": "customframeratelimiter",
+	"version": "${version}",
+	"name": "Custom Framerate Limiter",
+	"description": "Allows setting a custom value for Minecraft's framerate limit.",
+	"authors": [
+		"Microcontrollers"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/customframeratelimiter",
+		"sources": "https://github.com/MicrocontrollersDev/Custom-Framerate-Limiter",
+		"issues": "https://github.com/MicrocontrollersDev/Custom-Framerate-Limiter/issues"
+	},
+	"license": "LGPL-3.0",
+	"icon": "assets/customframeratelimiter/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+          "dev.microcontrollers.customframeratelimiter.CustomFramerateLimiter"
+		],
+		"modmenu": [
+			"dev.microcontrollers.customframeratelimiter.config.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"customframeratelimiter.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15",
+		"minecraft": ">=1.20",
+		"java": ">=17",
+		"fabric-api": "*",
+		"yet_another_config_lib_v3": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.gg/rejfv9kFJj",
+				"modmenu.modrinth": "https://modrinth.com/mod/customframeratelimiter"
+			},
+			"update_checker": true
+		}
+	}
+}

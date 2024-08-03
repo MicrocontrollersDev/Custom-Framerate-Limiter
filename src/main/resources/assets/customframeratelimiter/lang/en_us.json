@@ -1,0 +1,5 @@
+{
+  "custom-framerate-limiter.custom-framerate-limiter": "Custom Framerate Limiter",
+  "custom-framerate-limiter.set-framerate": "Set Framerate",
+  "custom-framerate-limiter.set-framerate.description": "Set a custom framerate limit. Set to 0 to use vanilla's."
+}
